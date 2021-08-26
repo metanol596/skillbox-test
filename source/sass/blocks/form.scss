@@ -1,0 +1,137 @@
+.form {
+	padding: 0 25px;
+
+	@media (min-width: $tablet-width) {
+		padding: 0 62px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 0 42px;
+	}
+}
+
+.form__inputs-container {
+	margin: 0 0 21px;
+
+	@media (min-width: $tablet-width) {
+		margin: 0 0 32px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin: 0 0 20px;
+	}
+}
+
+.form__input-wrap {
+	margin: 0 0 20px;
+}
+
+.form__input-wrap input {
+	font-size: 15px;
+	line-height: 28px;
+	color: $black;
+
+	width: 100%;
+	padding: 24px 28px;
+	border: 2px solid $lighten-grey;
+
+	@media (min-width: $tablet-width) {
+		padding: 21px 28px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 14px 28px;
+	}
+}
+
+.form__input-wrap input::placeholder {
+	@include open-sans-400;
+	font-size: 15px;
+	line-height: 28px;
+	letter-spacing: -0.5px;
+	color: $dark-grey;
+}
+
+.form__down-container {
+	@media (min-width: $desktop-width) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.form__term-checkbox-wrap {
+	padding: 0 0 0 44px;
+	margin: 0 0 48px;
+
+	@media (min-width: $desktop-width) {
+		order: 1;
+		margin: 0;
+	}
+}
+
+.form__term-checkbox-wrap label {
+	@include open-sans-400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.5px;
+	color: $dark-grey;
+
+	cursor: pointer;
+
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		border: 2px solid $lighten-grey;
+		left: -44px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 318px;
+    display: inline-block;
+    vertical-align: middle;
+	}
+}
+
+.form__term-checkbox-wrap input:checked + label::before {
+	background-image: url("../img/checked-mb.svg");
+  background-size: 15px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/checked-tb.svg");
+		background-color: $blue;
+
+		border: 2px solid $blue;
+	}
+}
+
+.form__term-checkbox-wrap a {
+	color: $blue;
+}
+
+.form__down-container button {
+	font-family: $open-sans;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: $white;
+
+	cursor: pointer;
+
+	width: 100%;
+	padding: 25px;
+	border: none;
+
+	background-color: $blue;
+
+	@media (min-width: $desktop-width) {
+		margin: 0 0 33px;
+	}
+}

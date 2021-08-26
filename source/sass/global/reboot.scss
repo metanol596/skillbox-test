@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $roboto;
+  font-weight: 700;
+  font-style: normal;
+  color: $white;
+
+  background-color: $light-grey;
+
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

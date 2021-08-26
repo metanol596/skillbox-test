@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skillbox</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <section class="price">
+      <div class="price__wrapper">
+        <h1>Стоимость обучения</h1>
+        <div class="price__container">
+          <div class="price__inner-container price__inner-container--blue">
+            <div class="price__discount-block">
+              <p>Скидка</p>
+              <span class="price__discount-text">40%</span>
+              <span class="price__discount-condition">Первым 20</span>
+            </div>
+            <div class="price__terms-block">
+              <div class="price__full-price-block">
+                <p>Полная стоимость курса</p>
+                <span>50 000<span class="rub"></span></span>
+              </div>
+              <div class="price__installment-block">
+                <span>2 900<span class="rub"></span></span>
+                <p>Рассрочка без первого взноса</p>
+              </div>
+              <div class="price__discount-conditions-block">
+                <span>29 000<span class="rub"></span></span>
+                <p>Для первых 20-ти</p>
+              </div>
+            </div>
+          </div>
+          <div class="price__inner-container price__inner-container--white">
+            <h2>Запишитесь на курс</h2>
+            <ul class="price__features features">
+              <li>Телефон</li>
+              <li>Телефон</li>
+              <li>Телефон</li>
+              <li>Телефон</li>
+            </ul>
+            <div class="price__course-start-info-block">
+              <div class="price__course-start-info price__course-srat-date">
+                <p>Старт курса:&nbsp;<span>&nbsp;7&nbsp;сентября</span></p>
+              </div>
+              <div class="price__course-start-info price__course-end">
+                <p>Осталось:&nbsp;<span>&nbsp;19&nbsp;мест</span></p>
+              </div>
+            </div>
+            <form class="form price__form" action="#" method="post" autocomplete="off">
+              <div class="form__inputs-container">
+                <div class="form__input-wrap">
+                  <label class="visually-hidden" for="name"></label>
+                  <input type="text" name="name" id="name" placeholder="Имя" required/>
+                </div>
+                <div class="form__input-wrap">
+                  <label class="visually-hidden" for="phone"></label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required/>
+                </div>
+                <div class="form__input-wrap">
+                  <label class="visually-hidden" for="email"></label>
+                  <input type="email" name="email" id="email" placeholder="Email" required/>
+                </div>
+              </div>
+              <div class="form__down-container">
+                <div class="form__term-checkbox-wrap">
+                  <input class="visually-hidden" type="checkbox" name="term" id="term" required>
+                  <label for="term">Я согласен с условиями обработки <a>персональных данных</a></label>
+                </div>
+                <button type="submit">Записаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

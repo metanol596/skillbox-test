@@ -1,0 +1,16 @@
+// Variables
+
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global
+
+@import "global/fonts.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+
+// Blocks
+
+@import "blocks/price.scss";
+@import "blocks/features.scss";
+@import "blocks/form.scss";

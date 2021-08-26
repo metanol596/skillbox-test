@@ -1,0 +1,32 @@
+.features {
+	list-style: disc;
+	padding: 0 25px 0 42px;
+	margin: 0 0 29px;
+
+	@media (min-width: $tablet-width) {
+		margin: 0 0 53px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin: 0 0 44px;
+		padding: 0 25px 0 62px;
+	}
+}
+
+.features li {
+	@include open-sans-400;
+	font-size: 15px;
+	line-height: 26px;
+	letter-spacing: -0.5px;
+	color: $dark-grey;
+
+	padding: 0 0 0 7px;
+
+	@media (min-width: $desktop-width) {
+		line-height: 28px;
+	}
+}
+
+.features li::marker {
+	color: $blue;
+}

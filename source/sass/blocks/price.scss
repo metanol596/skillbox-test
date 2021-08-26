@@ -1,0 +1,277 @@
+.price {
+	background-color: transparent;
+}
+
+.price__wrapper {
+	padding: 56px 0 0;
+
+	@media (min-width: $tablet-width) {
+		padding: 50px 30px 80px;
+	}
+}
+
+.price h1 {
+	font-size: 38px;
+	line-height: 44px;
+	letter-spacing: -0.5px;
+	color: $black;
+	
+	text-align: center;
+	margin: 0 auto 28px;
+  width: 90%;
+
+	@media (min-width: $tablet-width) {
+		font-size: 45px;
+		line-height: 53px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 55px;
+		line-height: 32px;
+	}
+}
+
+.price__container {
+	@media (min-width: $desktop-width) {
+		display: grid;
+    grid-template-columns: 1fr 1fr;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+}
+
+.price__inner-container--blue {
+	position: relative;
+	@include center-mb;
+
+	background: linear-gradient(to bottom, transparent 53px, $blue 53px, $blue 400px);
+}
+
+.price__discount-block {
+	position: absolute;
+	@include center-mb;
+
+	width: 110px;
+	height: 119px;
+	padding: 18px 0 23px;
+
+  background-color: $black;
+  background-image: 
+		linear-gradient(15deg, $blue 15%, transparent 15%), 
+		linear-gradient(345deg, $blue 15%, transparent 15%);
+}
+
+.price__discount-block p {
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	text-align: center;
+	margin: 0 0 7px;
+}
+
+.price__discount-text {
+	font-size: 30px;
+	line-height: 28px;
+	letter-spacing: -0.5px;
+
+	text-align: center;
+	margin: 0 0 3px;
+}
+
+.price__discount-condition {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 15px;
+	color: rgba($white, 0.7);
+	letter-spacing: -0.5px;
+	
+	text-align: center;
+}
+
+.price__terms-block {
+	padding: 135px 0 18px;
+
+	@media (min-width: $tablet-width) {
+		padding: 145px 0 50px;
+	}
+}
+
+.price__terms-block p {
+	font-weight: 400;
+	letter-spacing: -0.5px;
+
+	text-align: center;
+	margin: 0;
+}
+
+.price__full-price-block,
+.price__installment-block,
+.price__discount-conditions-block {
+	@include center-mb;
+	margin: 0 0 23px;
+}
+
+.price__full-price-block p {
+	font-size: 15px;
+	line-height: 18px;
+	color: rgba($white, 0.4);
+}
+
+.price__full-price-block span {
+	font-family: $roboto-slab;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 47px;
+	letter-spacing: -2px;
+	color: rgba($white, 0.4);
+
+	text-decoration: line-through;
+
+	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		font-size: 38px;
+		line-height: 50px;
+	}
+}
+
+.price__installment-block span {
+	font-family: $roboto-slab;
+	font-weight: 400;
+	font-size: 56px;
+	line-height: 74px;
+	letter-spacing: -2px;
+
+	@media (min-width: $desktop-width) {
+		font-size: 80px;
+		line-height: 106px;
+	}	
+}
+
+.price__installment-block p {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+
+	@media (min-width: $desktop-width) {
+		font-size: 23px;
+		line-height: 27px;
+	}
+}
+
+.price__discount-conditions-block span {
+	font-family: $roboto-slab;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 53px;
+	letter-spacing: -2px;
+	
+	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		font-size: 50px;
+		line-height: 66px;
+	}
+}
+
+.price__discount-conditions-block p {
+	font-size: 15px;
+	line-height: 18px;
+
+	@media (min-width: $desktop-width) {
+		font-size: 20px;
+		line-height: 23px;
+	}
+}
+
+.price__terms-block  .rub::before {
+	content: "\20BD";
+}
+
+.price__inner-container--white {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 56px;
+
+	background-color: $white;
+
+	@media (min-width: $tablet-width) {
+		padding: 0 61px 78px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin: 53px 0 0;
+		padding: 0 43px 57px;
+	}
+}
+
+.price__inner-container--white h2 {
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: -0.5px;
+	color: $black;
+
+	margin: 0 0 20px;
+	padding: 40px 25px 0;
+	width: 80%;
+
+	@media (min-width: $tablet-width) {
+		text-align: center;
+		width: 100%;
+		margin: 0 0 30px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 34px;
+		line-height: 40px;
+
+		text-align: left;
+		padding: 57px 42px 0;
+		margin: 0 0 24px;
+	}
+}
+
+.price__course-start-info-block {
+	@include center-mb;
+	align-items: flex-start;
+	margin: 0 25px 20px;
+
+	@media (min-width: $tablet-width) {
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 0 28px;
+	}
+
+	@media (min-width: $desktop-width) {
+		justify-content: flex-start;
+		margin: 0 42px 28px;
+	}
+}
+
+.price__course-start-info {
+	margin: 0 0 10px;
+}
+
+.price__course-srat-date {
+	margin: 0 50px 0 0;
+}
+
+.price__course-start-info p {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: -0.5px;
+	color: $dark-grey;
+
+	margin: 0;
+}
+
+.price__course-start-info span {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: -0.5px;
+	color: $blue;
+}
